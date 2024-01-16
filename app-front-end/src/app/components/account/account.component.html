@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="site-section">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-7">
+        <h2 class="heading-21921">Account Information</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class=" mb-7 ">
+          <div class="form-group">
+            <label for="customerName">Name</label>
+            <input type="text" class="form-control mt-1" id='customerName' value={{user.name}} disabled/>
+          </div>
+          <div class="form-group mt-3">
+            <label for="customerEmail">Email</label>
+            <input type="email" class="form-control mt-1" id='customerEmail' value={{user.email}} disabled />
+          </div>
+          <div class="form-group mt-3">
+            <label for="customerMobileNum">Mobile Number</label>
+            <input type="text" class="form-control mt-1" id="customerMobileNum" value={{user.mobileNumber}} disabled/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class=" mb-4">
+          <div class="form-group">
+            <label for="customerAccNo">Account Number</label>
+            <input type="text" class="form-control mt-1" id='customerAccNo' value={{account.accountNumber}} disabled/>
+          </div>
+          <div class="form-group mt-3">
+            <label for="customerAccountType">Account Type</label>
+            <input type="email" class="form-control mt-1" id='customerAccountType' value={{account.accountType}} disabled />
+          </div>
+          <div class="form-group mt-3">
+            <label for="branchAddress">Branch Address</label>
+            <input type="text" class="form-control mt-1" id="branchAddress" value={{account.branchAddress}} disabled/>
+          </div>
+        </div>
+      </div>
+  </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col">
+      <div class="">
+        <button class="btn btn-jbank" routerLink="/dashboard">
+          BACK
+        </button>
+      </div>
+    </div>
+  </div>
